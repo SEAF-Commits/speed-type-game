@@ -78,7 +78,7 @@ const B=(t,f,on)=>`<button class="${on?'on':''}" onclick="${f}">${t}</button>`;
 const VER='2.0',CREDIT='Seaf Ahmed';
 const GAME_URL=/github\.io$/.test(location.hostname)?location.href.split(/[?#]/)[0]:'https://claude.ai/artifact/JacUxTKj2sheZAcjSExaLu';
 // ===== Leaderboard (Supabase). Paste your Project URL and publishable/anon key between the quotes to turn it on =====
-const SB_URL='',SB_KEY='';const LB=!!(SB_URL&&SB_KEY);
+const SB_URL='https://mftwviurdmtihaalikgb.supabase.co/rest/v1/',SB_KEY='sb_publishable_L1Aqmu5N8K7B-qS_AJRqYA_XpgUewcp';const LB=!!(SB_URL&&SB_KEY);
 const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const sbH=()=>{const h={apikey:SB_KEY,'Content-Type':'application/json'};if(SB_KEY.startsWith('eyJ'))h.Authorization='Bearer '+SB_KEY;return h};
 const myName=()=>{try{return localStorage.getItem('stg_name')||''}catch(e){return''}};
